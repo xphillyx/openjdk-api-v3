@@ -57,7 +57,7 @@
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.2.3</version>
+                <version>1.2.7</version>
             </dependency>
             <dependency>
                 <groupId>io.aexp.nodes.graphql</groupId>
@@ -671,8 +671,7 @@
                         <phase>validate</phase>
                         <configuration>
                             <target name="ktlint">
-                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true"
-                                      classpathref="maven.plugin.classpath" classname="com.pinterest.ktlint.Main">
+                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classpathref="maven.plugin.classpath" classname="com.pinterest.ktlint.Main">
                                     <arg value="-F"/>
                                     <arg value="src/**/*.kt"/>
                                 </java>
@@ -685,8 +684,7 @@
                         <phase>validate</phase>
                         <configuration>
                             <target name="ktlint">
-                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true"
-                                      classpathref="maven.plugin.classpath" classname="com.pinterest.ktlint.Main">
+                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classpathref="maven.plugin.classpath" classname="com.pinterest.ktlint.Main">
                                     <arg value="src/**/*.kt"/>
                                 </java>
                             </target>
